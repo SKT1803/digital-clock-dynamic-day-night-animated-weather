@@ -1,0 +1,15 @@
+/* styles/moon.css */
+.moon {
+  position: absolute;
+  background-color: #d3d3d3; /* Light grey for moon */
+  border-radius: 50%;
+  transform: translate(-50%, 0);
+  transition:
+    bottom 1s linear,
+    left 1s linear,
+    width 1s linear,
+    height 1s linear,
+    box-shadow 1s linear,
+    opacity 1s linear;
+  z-index: 1; /* Same z-index as sun */
+}

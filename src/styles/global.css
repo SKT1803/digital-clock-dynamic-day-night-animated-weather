@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.main-wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Smooth background transition */
+.background {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  transition: background-image 3s ease-in-out;
+}
+
+.background-layer {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  transition: opacity 3s ease-in-out;
+}
+
+.background-layer.day {
+  background: linear-gradient(to top, #add8e6 0%, #ffffff 100%);
+}
+
+.background-layer.night {
+  background: linear-gradient(to top, #000000 0%, #001a33 100%);
+}
+
+
+/* Stars */
+.stars-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  transition: opacity 2s ease;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0;
+  animation: twinkle 3s infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+/* Sun */
+.sun {
+  position: absolute;
+  background-color: yellow;
+  border-radius: 50%;
+  transform: translate(-50%, 0);
+  transition:
+    bottom 1s linear,
+    left 1s linear,
+    width 1s linear,
+    height 1s linear,
+    box-shadow 1s linear,
+    opacity 1s linear;
+  z-index: 1;
+}
+
+/* UI Controls */
+.controls {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+}
