@@ -1,6 +1,6 @@
 // components/DigitalClock.jsx
 import React from "react";
-import "../styles/DigitalClock.css"; // Import the specific CSS for the clock
+import "../styles/digitalclock.css"; // Import the specific CSS for the clock
 
 function DigitalClock({ time }) { // Accept 'time' as a prop
     function formatTime() {
