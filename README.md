@@ -27,7 +27,26 @@ This is a digital clock web app that dynamically reflects the **sun** and **moon
 
 ## 📂 Project Structure
 
+---
 
+## How It Works
+
+- The `App.jsx` simulates **virtual time** and updates it every second (or faster depending on speed).
+- The **sun and moon positions** are calculated using sine curves to simulate a semi-circular sky arc.
+- The **blend values** fade the sun and moon smoothly in and out at appropriate times.
+- The **stars** appear only at night and twinkle using CSS animations.
+- The **digital clock** always shows the current simulated time in HH:MM:SS format.
+
+---
+
+## Setup & Development
+
+```bash
+  git clone https://github.com/YOUR_USERNAME/digital-clock-dynamic-day-night
+  cd digital-clock-dynamic-day-night
+  npm install
+  npm run dev
+```
 
 ## Preview
 
