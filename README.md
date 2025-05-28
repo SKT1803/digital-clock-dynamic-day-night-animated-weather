@@ -2,7 +2,7 @@
 
 This is a digital clock web app that dynamically reflects the **sun** and **moon’s position** based on the real-time clock. The sky background shifts smoothly from **day to night**, with a glowing sun, fading stars, and moonlight. The speed of time can also be accelerated for demo purposes.
 
-### 🔗 [Live Demo on Vercel](https://digital-clock-dynamic-day-night.vercel.app/)
+### 🌐 [Live Demo on Vercel](https://digital-clock-dynamic-day-night.vercel.app/)
 
 ---
 
@@ -60,7 +60,7 @@ This is a digital clock web app that dynamically reflects the **sun** and **moon
 ## Setup & Development
 
 ```bash
-  git clone https://github.com/YOUR_USERNAME/digital-clock-dynamic-day-night
+  git clone https://github.com/SKT1803/digital-clock-dynamic-day-night
   cd digital-clock-dynamic-day-night
   npm install
   npm run dev
@@ -68,6 +68,19 @@ This is a digital clock web app that dynamically reflects the **sun** and **moon
 
 ## Preview
 
-
+<table>
+  <tr>
+    <td><img src="screenshots/1.png" width="800"></td>
+  </tr>
+ <tr>
+    <td><img src="screenshots/2.png" width="800"></td>
+  </tr>
+   <tr>
+    <td><img src="screenshots/3.png" width="800"></td>
+  </tr>
+   <tr>
+    <td><img src="screenshots/4.png" width="800"></td>
+  </tr>
+</table>
 
 ---
