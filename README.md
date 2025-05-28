@@ -26,7 +26,25 @@ This is a digital clock web app that dynamically reflects the **sun** and **moon
 ---
 
 ## 📂 Project Structure
-
+<pre>
+  src/
+├── assets/                         # Image and icon assets
+├── components/                     # Visual logic for sky simulation
+│   ├── DigitalClock.jsx            # Displays current time
+│   ├── Moon.jsx                    # Animates moon position and glow
+│   ├── Stars.jsx                   # Generates twinkling stars
+│   └── Sun.jsx                     # Animates sun arc, scale, and shadow
+├── styles/                         # Component-specific CSS styles
+│   ├── global.css                  # Day/night backgrounds and layout
+│   ├── digitalclock.css            # Clock styling
+│   ├── moon.css                    # Moon animations
+│   ├── sun.css                     # Sun animations
+│   └── stars.css                   # Star twinkling animation
+├── App.jsx                         # Main scene logic (sky, time, transitions)
+├── App.css                         # App-level layout (if used)
+├── index.css                       # Base CSS overrides
+└── main.jsx                        # App root rendering entry point
+</pre>
 ---
 
 ## How It Works
