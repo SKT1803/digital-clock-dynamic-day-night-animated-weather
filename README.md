@@ -1,12 +1,36 @@
-# React + Vite
+# 🌞🌜 Digital Clock with Dynamic Day/Night Animation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a digital clock web app that dynamically reflects the **sun** and **moon’s position** based on the real-time clock. The sky background shifts smoothly from **day to night**, with a glowing sun, fading stars, and moonlight. The speed of time can also be accelerated for demo purposes.
 
-Currently, two official plugins are available:
+### 🔗 [Live Demo on Vercel](https://digital-clock-dynamic-day-night.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Real-time digital clock with 12-hour format
+- Animated sun and moon follow a realistic arc path across the screen
+- Night sky with twinkling stars
+- Sky color dynamically changes based on time (day/night blending)
+- Adjustable speed controls for faster time simulation
+- Objects smoothly fade in/out using blend and easing techniques
+
+---
+
+## Technologies Used
+
+- **React.js**
+- **HTML & CSS (custom animations and responsive layout)**
+- **Custom time-based rendering logic (no external date libraries)**
+
+---
+
+## 📂 Project Structure
+
+
+
+## Preview
+
+
+
+---
