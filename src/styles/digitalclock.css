@@ -21,4 +21,9 @@
     font-family: monospace;
     text-align: center;
     text-shadow: 3px 3px 5px hsla(0, 0%, 0%, 0.75); /* Adds a subtle shadow for readability */
+
+    user-select: none; /* Prevents text selection */
+    -webkit-user-select: none; /* For Safari */
+    -moz-user-select: none; /* For Firefox */
+    -ms-user-select: none; /* For Internet Explorer */
 }
