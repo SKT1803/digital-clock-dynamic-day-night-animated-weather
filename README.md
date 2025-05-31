@@ -93,7 +93,7 @@ src/
   npm run dev
 ```
 
-## Preview V1
+## Preview: Version 1
 
 <table>
   <tr>
@@ -121,8 +121,34 @@ src/
 - Weather effects are rendered using layered CSS animations, not WebGL or canvas.
 
 ---
-## Preview V2
+## Preview: Version 2
+
+
 ☁️ Cloudy
+<table>
+  <tr>
+    <td><img src="screenshots/9.png" width="500"></td>
+    <td><img src="screenshots/10.png" width="500"></td>
+  </tr>
+</table>
 🌧️ Rain
+  <table>
+ <tr>
+    <td><img src="screenshots/11.png" width="500"></td>
+    <td><img src="screenshots/12.png" width="500"></td>
+  </tr>
+  </table>
 ❄️ Snow
+  <table>
+   <tr>
+    <td><img src="screenshots/13.png" width="500"></td>
+    <td><img src="screenshots/14.png" width="500"></td>
+  </tr>
+  </table>
 🌫️ Fog
+  <table>
+  <tr>
+    <td><img src="screenshots/15.png" width="500"></td>
+    <td><img src="screenshots/16.png" width="500"></td>
+  </tr>
+</table>
