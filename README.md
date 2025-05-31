@@ -93,7 +93,7 @@ src/
   npm run dev
 ```
 
-## Preview
+## Preview V1
 
 <table>
   <tr>
@@ -120,6 +120,8 @@ src/
 - The app gracefully handles API timeouts and falls back to local time if necessary.
 - Weather effects are rendered using layered CSS animations, not WebGL or canvas.
 
+---
+## Preview V2
 ☁️ Cloudy
 🌧️ Rain
 ❄️ Snow
