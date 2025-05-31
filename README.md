@@ -1,5 +1,12 @@
 # 🌞🌜 Digital Clock with Dynamic Day/Night + Weather Effects
 
+<table>
+  <tr>
+    <td><img src="screenshots/17.png" width="700"></td>
+    <td><img src="screenshots/18.png" width="700"></td>
+  </tr>
+</table>
+
 This is a dynamic **digital clock weather simulation app** that changes not only based on **real-time sun/moon movement** but also adapts to the **live weather conditions** of the selected city. Effects like **rain, snow, fog, and clouds** are animated over the sky background.
 
 ### 🌐 [Live Demo on Vercel](https://digital-clock-dynamic-day-night.vercel.app/)
