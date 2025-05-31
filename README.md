@@ -1,6 +1,6 @@
-# 🌞🌜 Digital Clock with Dynamic Day/Night Animation
+# 🌞🌜 Digital Clock with Dynamic Day/Night + Weather Effects
 
-This is a digital clock web app that dynamically reflects the **sun** and **moon’s position** based on the real-time clock. The sky background shifts smoothly from **day to night**, with a glowing sun, fading stars, and moonlight. The speed of time can also be accelerated for demo purposes.
+This is a dynamic **digital clock weather simulation app** that changes not only based on **real-time sun/moon movement** but also adapts to the **live weather conditions** of the selected city. Effects like **rain, snow, fog, and clouds** are animated over the sky background.
 
 ### 🌐 [Live Demo on Vercel](https://digital-clock-dynamic-day-night.vercel.app/)
 
@@ -9,51 +9,78 @@ This is a digital clock web app that dynamically reflects the **sun** and **moon
 ## Features
 
 - Real-time digital clock with 12-hour format
-- Animated sun and moon follow a realistic arc path across the screen
-- Night sky with twinkling stars
-- Sky color dynamically changes based on time (day/night blending)
-- Adjustable speed controls for faster time simulation
-- Objects smoothly fade in/out using blend and easing techniques
+- 🌞 Sun and 🌜 Moon follow a realistic arc across the sky
+- Stars fade in/out at night with twinkling animation
+- Smooth transitions between day/night using blend and easing
+- Adjustable speed controls for simulating time faster
+- Weather-dependent background animations:
+  - ☁️ Cloudy
+  - 🌧️ Rain
+  - ❄️ Snow
+  - 🌫️ Fog
+- City selector that fetches real-time weather and time data via API
+- Fully animated UI using React & CSS modules
 
 ---
 
 ## Technologies Used
 
 - **React.js**
-- **HTML & CSS (custom animations and responsive layout)**
-- **Custom time-based rendering logic (no external date libraries)**
+- **HTML & CSS (custom animations, effects, and layout)**
+- **OpenWeatherMap API** for live weather data
+- **Modular Components** and **custom Hooks** (`useWeather`)
+- **CSS Animations** and easing logic
 
 ---
 
 ## 📂 Project Structure
+
 <pre>
-  src/
-├── assets/                         # Image and icon assets
-├── components/                     # Visual logic for sky simulation
-│   ├── DigitalClock.jsx            # Displays current time
-│   ├── Moon.jsx                    # Animates moon position and glow
-│   ├── Stars.jsx                   # Generates twinkling stars
-│   └── Sun.jsx                     # Animates sun arc, scale, and shadow
-├── styles/                         # Component-specific CSS styles
-│   ├── global.css                  # Day/night backgrounds and layout
-│   ├── digitalclock.css            # Clock styling
-│   ├── moon.css                    # Moon animations
-│   ├── sun.css                     # Sun animations
-│   └── stars.css                   # Star twinkling animation
-├── App.jsx                         # Main scene logic (sky, time, transitions)
-├── App.css                         # App-level layout (if used)
-├── index.css                       # Base CSS overrides
-└── main.jsx                        # App root rendering entry point
+src/
+├── assets/                       # Icons, background images
+├── components/                  # Clock, effects, UI panels
+│   ├── CityInput.jsx            # User input for city selection
+│   ├── CloudEffect.jsx          # Cloud animation layer
+│   ├── DigitalClock.jsx         # Time display
+│   ├── FogEffect.jsx            # Fog particles
+│   ├── Moon.jsx                 # Moon arc logic
+│   ├── RainEffect.jsx           # Rain animation
+│   ├── SnowEffect.jsx           # Snow animation
+│   ├── Stars.jsx                # Night twinkling stars
+│   ├── Sun.jsx                  # Sun path and blending
+│   ├── WeatherEffects.jsx      # Combined weather effect manager
+│   └── WeatherPanel.jsx        # Info panel for city and weather
+├── hooks/
+│   └── useWeather.js           # Custom hook for fetching weather API
+├── styles/
+│   ├── cityinput.css
+│   ├── cloudEffect.css
+│   ├── digitalClock.css
+│   ├── fogEffect.css
+│   ├── global.css
+│   ├── moon.css
+│   ├── rainEffect.css
+│   ├── snowEffect.css
+│   ├── stars.css
+│   ├── sun.css
+│   └── weatherPanel.css
+├── App.jsx                      # Core app logic (clock, sky, effects)
+├── App.css
+├── index.css
+└── main.jsx                     # App root
 </pre>
+
 ---
 
 ## How It Works
 
-- The `App.jsx` simulates **virtual time** and updates it every second (or faster depending on speed).
-- The **sun and moon positions** are calculated using sine curves to simulate a semi-circular sky arc.
-- The **blend values** fade the sun and moon smoothly in and out at appropriate times.
-- The **stars** appear only at night and twinkle using CSS animations.
-- The **digital clock** always shows the current simulated time in HH:MM:SS format.
+- The app simulates **virtual time** using `setInterval`, optionally accelerated by speed controls.
+- **City input** triggers a weather fetch that sets:
+  - Time zone offset (syncs digital clock to city's local time)
+  - Current weather condition (e.g., "Snow", "Rain", "Clouds", "Clear")
+- The correct **sky condition components** are rendered dynamically based on weather type.
+- **Sun & Moon** movement follows a smooth trigonometric arc using sine easing.
+- **Stars** are visible only at night and animated using CSS keyframes.
 
 ---
 
@@ -88,3 +115,12 @@ This is a digital clock web app that dynamically reflects the **sun** and **moon
 </table>
 
 ---
+
+## Note
+- The app gracefully handles API timeouts and falls back to local time if necessary.
+- Weather effects are rendered using layered CSS animations, not WebGL or canvas.
+
+☁️ Cloudy
+🌧️ Rain
+❄️ Snow
+🌫️ Fog
