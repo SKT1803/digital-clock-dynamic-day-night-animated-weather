@@ -1,0 +1,49 @@
+/* styles/raineffect.css */
+.rain-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 5; /* Between background and elements */
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.rain-container.active {
+    opacity: 1;
+}
+
+.raindrop {
+    position: absolute;
+     top: -100px; /* Start above the container */
+     /* Bluish transparent */
+     /* background: rgba(174, 194, 224, 0.7); */
+     background: rgb(174, 194, 224);
+    width: 2px;
+    height: 20px;
+    border-radius: 50%;
+    animation: fall 1s linear infinite;
+    transform-origin: center top;
+}
+
+@keyframes fall {
+    0% {
+        /* transform: translateY(-100px) rotate(5deg); */
+         transform: translateY(0) rotate(5deg); /* Start from top: -100px */
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        /* transform: translateY(100vh) rotate(5deg); */
+        transform: translateY(calc(100vh + 100px)) rotate(5deg); /* Fall full height + offset */
+        opacity: 0;
+    }
+}
