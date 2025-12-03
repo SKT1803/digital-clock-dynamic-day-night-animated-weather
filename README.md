@@ -1,4 +1,4 @@
-# 🌞🌜 Digital Clock with Dynamic Day/Night + Weather Effects
+# Digital Clock with Dynamic Day/Night + Weather Effects
 
 <table>
   <tr>
